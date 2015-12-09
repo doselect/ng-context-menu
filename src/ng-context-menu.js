@@ -31,6 +31,7 @@
             var opened = false;
 
             function open(event, menuElement) {
+              $element.addClass('expanded');
               menuElement.addClass('open');
 
               var doc = $document[0].documentElement;
@@ -62,6 +63,7 @@
             }
 
             function close(menuElement) {
+              $element.removeClass('expanded')
               menuElement.removeClass('open');
 
               if (opened) {
