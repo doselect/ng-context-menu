@@ -63,7 +63,7 @@
             }
 
             function close(menuElement) {
-              $element.removeClass('expanded')
+              $element.removeClass('expanded');
               menuElement.removeClass('open');
 
               if (opened) {
